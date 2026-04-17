@@ -13,6 +13,8 @@ public:
     void leave_() override;
     void loadParams_() override;
 
+    bool isChangeable() const override;
+
 protected:
     // static_param at offset 0x38
     const int* mJustGuardTimesMin_s{};

@@ -19,4 +19,8 @@ void EnemyDefaultReaction::loadParams_() {
     getStaticParam(&mInComboSmallDamageNoCancel_s, "InComboSmallDamageNoCancel");
 }
 
+bool EnemyDefaultReaction::isChangeable() const {
+    return getCurrentChild()->isChangeable();
+}
+
 }  // namespace uking::ai
